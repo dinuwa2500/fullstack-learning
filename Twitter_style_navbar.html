@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Twitter Style Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 70px;
+      background-color: #fff;
+      border-right: 1px solid #ddd;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 20px;
+    }
+
+    .navbar a {
+      text-decoration: none;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+      transition: background 0.3s;
+      width: 50px;
+      height: 50px;
+      justify-content: center;
+      border-radius: 50%;
+    }
+
+    .navbar a:hover {
+      background-color: #e8f5fe;
+    }
+
+    .navbar a.active {
+      background-color: #d0ebff;
+    }
+
+    .navbar img {
+      width: 24px;
+      height: 24px;
+      margin-bottom: 5px;
+    }
+
+    .navbar span {
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="#" class="active">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25694.png" alt="Home">
+    </a>
+    <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/1827/1827392.png" alt="Notifications">
+    </a>
+    <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Messages">
+    </a>
+    <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/1077/1077063.png" alt="Profile">
+    </a>
+    <a href="#">
+      <img src="https://cdn-icons-png.flaticon.com/512/566/566737.png" alt="More">
+    </a>
+  </div>
+
+</body>
+</html>
